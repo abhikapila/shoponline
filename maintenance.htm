@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--   File: maintenance.html  
+        Student ID : 4951328
+        Name : Abhishek Kapila
+        Assignment 2: COS80021 Web Application Development --> 
+		<!-- Reference:  http://www.w3schools.com/php
+						 https://www.youtube.com/
+						 http://stackoverflow.com/
+						 http://www.tutorialspoint.com/php/
+			-->
+			
+<!-- This Page is for maintenance.htm-->
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	
+	<title>Maintenance Page</title>
+	<script type="text/javascript" src="maintenance.js"></script>   
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" /> 
+    
+	
+</head>
+    
+<body style="background-color:#F0F0F5">
+
+<section id="container" style="width:100%">
+		<article id="space" style="width:10%;float:left;"></article>
+	   <article id="header"><h1>ShopOnline</h1></article>
+	</section>
+	
+	<section>
+		<nav id="menu">
+		<ul id="nav">
+			<li><a href="login.htm" class="list">Home</a></li>
+			<li><a href="listing.htm" class="list">Listing</a></li>
+			<li><a href="bidding.htm" class="list">Bidding</a></li>
+			<li><a href="maintenance.htm" class="list">Maintenance</a></li>
+			<li><a href="logout.php" class="list">Logout</a></li>
+		</ul>
+		</nav></br></br>
+		<hr></br> 
+	</section>
+		
+<form>	
+	<table style="margin:auto;">
+		<tr><td></td><td style="text-align:left"><input type="button" id="process" value="Process Auction Items" onclick="callProcess()">
+		<input type="button" id="report"  value="Generate Report" onclick="callReport()" /></td></tr><br>
+	</table>
+</form>
+<div>  
+	  	<td colspan="3">
+                <span id="spant" class="data"> 
+	    			<p></p>  
+				</span>
+                </td>
+</body>
+</html>

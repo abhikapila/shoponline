@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--    File: listing.htm
+         Student ID : 4951328
+         Name : Abhishek Kapila
+         Assignment 2: COS80021 Web Application Development --> 
+	
+
+<head>
+		<meta charset="utf-8">   
+        <meta name="description" content="Web Application development">   
+        <meta name="keywords"    content="HTML">   
+        <meta name="author"      content="Abhishek Kapila"> 
+	<title>Assesment 2</title>
+    	<script type="text/javascript" src="listing.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />	
+</head>
+    
+<body style="background-color:#F0F0F5">
+
+	<section id="container" style="width:100%">
+		<article id="space" style="width:10%;float:left;"></article>
+	   <article id="header"><h1>ShopOnline</h1></article>
+	</section>
+	
+	<section>
+		<nav id="menu">
+		<ul id="nav">
+			<li><a href="login.htm" class="list">Home</a></li>
+			<li><a href="listing.htm" class="list">Listing</a></li>
+			<li><a href="bidding.htm" class="list">Bidding</a></li>
+			<li><a href="maintenance.htm" class="list">Maintenance</a></li>
+			<li><a href="logout.php" class="list">Logout</a></li>
+		</ul>
+		</nav></br></br>
+		<hr></br>
+	</section>
+  
+<form id="listinginput">
+<style type="text/css">
+fieldset 
+{
+	border: 1px solid #000000;
+ 	margin:auto;
+	width:800px;
+	height: 340px;
+	text-align:center;
+}
+
+</style>
+
+	<fieldset style="background-color:#E0F5FF">
+	<legend ><b>Seller Details</b></legend>
+	<p  font color="red" style="text-align:left"><i><font color="red">*Required Fields</font></i></p>
+	<table style="margin:auto;">
+		<tr>
+			<td style="text-align:right">Item Name <font color="red">*</font> </td>
+			<td>
+				<input type="text" name="itemname" id="itemname" size="35" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">Category <font color="red">*</font> </td>
+			<td style="text-align:left">
+				<select  value="category" name="category" id="category" onclick =addcategory(this)>
+					<option>Camera</option>
+					<option>Phone</option>
+					<option value = "Other">Other </option>
+				</select>
+			</td>
+		</tr>
+			<br>
+		<tr>
+			<td style="text-align:right">Description <font color="red">*</font>  </td>
+			<td><input type="text" name="description" id="description" size="35" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:right">Start Price <font color="red">*</font>  </td>
+			<td style="text-align:left">
+				<input type="text" name="startpriced" id="startpriced" size="5" maxlength="5" placeholder="$$$$$" />
+				<input type="text" name="startpricec" id="startpricec" size="3" maxlength="2" value="00"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">Reserve Price <font color="red">*</font>  </td>
+			<td style="text-align:left">
+				<input type="text" name="reservepriced" id="reservepriced" size="5" maxlength="5" placeholder="$$$$$" />
+				<input type="text" name="reservepricec" id="reservepricec" size="3" maxlength="2" value="00"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">Buy It Now Price <font color="red">*</font>  </td>
+			<td style="text-align:left">
+				<input type="text" name="buyitnowpriced" id="buyitnowpriced" size="5" maxlength="5" placeholder="$$$$$"/>
+				<input type="text" name="buyitnowpricec" id="buyitnowpricec" size="3" maxlength="2" value="00"/>
+			</td>
+		</tr>		
+		<tr>
+			<td style="text-align:right">Duration <font color="red">*</font> </td>
+			<td style="text-align:left">
+
+	<script>
+            	DurDay();
+            	function DurDay()
+            	{
+                var DurDay = "Day"
+                document.write("<select value='day' name='day' id='day'>");
+
+	                for (var i=0; i <=31; i++)
+                	{
+	                    document.write("<option>" + DurDay + "</option>");
+			    DurDay=i;
+                	}
+		document.write("</select>");
+		}
+   	</script>			
+			
+
+	<script>
+            	TimeHours();
+            	function TimeHours()
+            	{
+                var TimeHours = "Hour"
+                document.write("<select value='hour' name='hour' id='hour'>");
+
+	                for (var i=0; i <=24; i++)
+                	{
+	                    document.write("<option>" + TimeHours + "</option>");
+			    TimeHours=i;
+                	}
+		document.write("</select>");
+		}
+   	</script>
+	
+	<script>
+            	TimeMin();
+            	function TimeMin()
+            	{
+                var TimeMin = "Min";
+                document.write("<select value='min' name='min' id='min'>");
+
+	                for (var i=0; i <=60; i++)
+                	{        	            
+	                    document.write("<option>" + TimeMin + "</option>");
+			    TimeMin=i;
+                	}
+		document.write("</select>");
+		} 
+   	</script>  
+	
+
+		
+	<tr>
+		<td></td>
+		<td style="text-align:left">
+			<input type="button" id="listing" value="Listing" onclick="Listing()">
+			<input type="reset" id="reset" value="Reset">
+		</td>
+	</tr>
+	<br>
+	</table>
+	</fieldset>
+</form>
+            	<td colspan="3">
+					<div id="targetDiv" class="data"> 
+						<p></p>  
+					</div>
+                </td>
+
+
+</body>
+</html>

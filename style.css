@@ -1,0 +1,92 @@
+/* Reference:  http://www.w3schools.com/php
+						 https://www.youtube.com/
+						 http://stackoverflow.com/
+						 http://www.tutorialspoint.com/php/
+*/
+
+h1 {
+    color: #0066CC;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.list{
+color:#990099;
+
+}
+
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+width:100%;
+text-align: center;
+/*background-color:#213270;*/
+}
+
+li
+{
+float:none;
+display:inline-block;
+}
+
+li a
+{
+  background: none repeat scroll 0 0 #CCCCCC;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 5px;
+    min-width: 100px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    text-decoration:none;
+    border:1px solid black;
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.logout{
+background: none repeat scroll 0 0 #CCCCCC;
+		color: #FFFFFF;
+		display: inline-block;
+		margin: 5px;
+		min-width: 100px;
+		padding: 10px;
+		text-align: center;
+		width: 100px;
+		text-decoration:none;
+		border:1px solid black;
+		-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	color:#990099;
+	font-size:14px;
+	font-family: Arial, Verdana, sans-serif;
+	border-radius: 10px;
+
+}
+
+.fields{
+    border-color:#0066CC;
+    border-style: solid;
+    background-color:#E8F5FF;
+    margin: auto;
+    min-width:800px;
+    min-height:200px;
+}
+
+.legend
+{
+color:#0066CC;
+margin: 0px auto;
+}
+
+.td{
+color:#0066CC;
+
+}
+

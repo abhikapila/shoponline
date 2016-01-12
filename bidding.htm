@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--    File: bidding.html  
+         Student ID : 4951328
+         Name : Abhishek Kapila
+         Assignment 2: COS80021 Web Application Development --> 
+<head>
+		<meta charset="utf-8">   
+        <meta name="description" content="Web Application development">   
+        <meta name="keywords"    content="HTML">   
+        <meta name="author"      content="Abhishek Kapila"> 
+		
+	<title>Assesment 2</title>
+	<!--<script type="text/javascript" src="common.js"></script>-->
+	<script type="text/javascript" src="bidding.js"></script>
+	<script type="text/javascript" src="logout.js" ></script>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />   
+
+</head>
+    
+<body style="background-color:#F0F0F5">
+<!--	
+<div style="width:100%;">
+  <h1 style="text-align:center"><font face="Trebuchet MS" color="blue">ShopOnline</font></h1> 
+<p  style="text-align:center">
+	
+	<a href="login.htm" class="ml-btn-1" target="login.htm">Home</a>
+	<a href="listing.htm" class="ml-btn-1" target="listing.htm">Listing</a>
+	<a href="bidding.htm" class="ml-btn-1" target="bidding.htm">Bidding</a>
+	<a href="maintenance.htm" class="ml-btn-1" target="maintenance.htm">Maintenance</a>
+	<a href="login.htm" class="ml-btn-1" target="login.htm">Log Out</a>
+
+	<h2 style="text-align:center"> ___________________________________________________________</h2>
+	</p>
+	-->
+	<section id="container" style="width:100%">
+		<article id="space" style="width:10%;float:left;"></article>
+	   <article id="header"><h1>ShopOnline</h1></article>
+	</section>
+	
+	<section>
+		<nav id="menu">
+		<ul id="nav">
+			<li><a href="login.htm" class="list">Home</a></li>
+			<li><a href="listing.htm" class="list">Listing</a></li><!--.php-->
+			<li><a href="bidding.htm" class="list">Bidding</a></li><!--.php-->
+			<li><a href="maintenance.htm" class="list">Maintenance</a></li>
+			<li><a href="logout.php" class="list">Logout</a></li>
+			<!--<li align="right" class="list"><input class="logout" type="submit" value="Logout" name="logout" onclick="logout();"/></li>
+			-->
+			
+		</ul>
+		</nav></br></br>
+		<hr></br>
+	</section>
+	<p  style="text-align:center"><i>Current auction items are listed below.To place a bid for an item, use the Place Bid button.</i></p>
+	<p  style="text-align:center"><i><b>NOTE: </b>Item remaining time and bid prices are updated every 5 seconds.</i></p>
+</div>  
+<div>  
+	<script type="text/javascript" language="JavaScript">
+		callBidding();
+	</script>
+    	<td colspan="3">
+                <div id="targetDiv" class="data"> 
+	    			<p></p>  
+				</div>
+                </td>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- Reference:  http://www.w3schools.com/php
+						 https://www.youtube.com/
+						 http://stackoverflow.com/
+						 http://www.tutorialspoint.com/php/
+			-->
+			
+<!-- This Page is for registering new user-->	
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+		<meta charset="utf-8">   
+        <meta name="description" content="Web Application development">   
+        <meta name="keywords"    content="HTML">   
+        <meta name="author"      content="Abhishek Kapila"> 
+    <title>Registration Page</title> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="register.js" ></script>
+</head> 
+
+<body>
+	
+	<section id="container" style="width:100%">
+		<article id="space" style="width:10%;float:left;"></article>
+	   <article id="header"><h1>ShopOnline</h1></article>
+	</section>
+	
+	<section>
+		<nav id="menu">
+		<ul id="nav">
+			<li><a href="login.htm" class="list">Home</a></li>
+			<li><a href="listing.htm" class="list">Listing</a></li>
+			<li><a href="bidding.htm" class="list">Bidding</a></li>
+			<li><a href="maintenance.htm" class="list">Maintenance</a></li>
+			<li><a href="logout.php" class="list">Logout</a></li>
+		</ul>
+		</nav></br></br>
+		<hr></br>
+	</section>
+<form name="registerForm">
+	<section id="container" style="width:100%">
+	<article id="space" style="width:10%;float:left;"></article>
+  	<article  id="fieldset" style="width:100%; ">
+		
+		<table class="legend">
+			<tr>
+				<td  align="right">To register a new account with ShopOnline, please complete the registration form below. To Login</td>
+				<td align="left">
+					<strong><a href="login.htm" style="color:red;width:80px">click here</a></strong>
+				</td>
+			</tr>
+		</table>
+		</br>
+		</br>
+		<fieldset class="fields" style="width:50%; ">
+			<legend class="legend">Registration Details</legend>		
+			<p>
+				<span style="color:red">*</span>Required fields.
+			</p> 
+			<table class="table" align="center"> 
+				<tr> 
+					<td class="td" align="right">		
+					First Name: <span style="color:red"> * </span>
+					</td>
+					<td>
+						<input type="text" name="firstname" size=30 id="firstname"> </label>
+					</td>
+				</tr>
+				<tr>
+					<td class="td" align="right">
+						Surname: <span style="color:red"> * </span>
+					</td>
+					<td>
+						<input type="text" name="surname" size=30 id="surname"></label>
+					</td>
+				</tr>
+				<tr>
+					<td class="td" align="right">
+						Email: <span style="color:red"> * </span>
+					</td>
+					<td>
+						<input type="text" name="email" size=50 id="email"> </label>
+					</td>
+				</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="button" value="Register" onclick="register()">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+			</table>
+		</fieldset>  
+	<span id="spanxhr"></span>
+	</article>
+</section>
+</form>
+	
+</body>
+</html>

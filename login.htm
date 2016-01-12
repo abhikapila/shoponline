@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--    File: login.htm
+         Student ID : 4951328
+         Name : Abhishek Kapila
+         Assignment 2: COS80021 Web Application Development --> 
+<head>
+		<meta charset="utf-8">   
+        <meta name="description" content="Web Application development">   
+        <meta name="keywords"    content="HTML">   
+        <meta name="author"      content="Abhishek Kapila"> 
+    <title>Login Page</title>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+	
+</head>
+    
+<body style="background-color:#F0F0F5">
+
+<section id="container" style="width:100%">
+		<article id="space" style="width:10%;float:left;"></article>
+	   <article id="header"><h1>ShopOnline</h1></article>
+	</section>
+	
+	<section>
+		<nav id="menu">
+		<ul id="nav">
+			<li><a href="login.htm" class="list">Home</a></li>
+			<li><a href="listing.htm" class="list">Listing</a></li>
+			<li><a href="bidding.htm" class="list">Bidding</a></li>
+			<li><a href="maintenance.htm" class="list">Maintenance</a></li>
+			<li><a href="logout.php" class="list">Logout</a></li>
+		</ul>
+		</nav></br></br>
+		<hr></br>
+			<p  style="text-align:center">
+				Please <i>login</i> below or to register as a new user, <a href="register.htm">Register Here.</a>
+			</p>
+	</section>
+  
+    <form name="loginForm">
+<style type="text/css">
+fieldset 
+{
+	border: 1px solid #000000;
+ 	margin:auto;
+	width:800px;
+	height: 240px;
+	text-align:center;
+}
+
+</style>
+
+	<fieldset style="background-color:#E0F5FF">
+	<legend><b>Login Details</b></legend>
+	<p  font color="red" style="text-align:left"><i><font color="red">*Required Fields</font></i></p>
+	<table style="margin:auto;">
+		<tr><td style="text-align:right">Email<font color="red">*</font>:</td><td style="text-align:left"><input type="text" name="email" id="email" required="true" size="70"></td></tr>
+		<tr><td style="text-align:right">Password<font color="red">*</font>:</td><td style="text-align:left"><input type="password" name="password" id="password" required="true" size="35"></td></tr><br>
+	
+	<tr><td></td><td style="text-align:left"><input type="button" id="btnlogin" value="Login" onclick="Login()">
+	<input type="reset" id="reset"  value="Reset" /></td></tr><br>
+	</table>
+	</fieldset>
+</form>
+ 
+             	<td colspan="3">
+                <span id="spant" class="data"> 
+	    			<p></p>  
+
+				</span>
+                </td>
+</body>
+</html>
